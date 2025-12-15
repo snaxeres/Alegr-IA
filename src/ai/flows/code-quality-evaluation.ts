@@ -41,9 +41,9 @@ You will analyze the given code snippet for disallowed branding related to Fireb
 
 Project Name: {{{projectName}}}
 Code Snippet:
-```
+\`\`\`
 {{{codeSnippet}}}
-```
+\`\`\`
 
 Generate a report indicating whether the code snippet contains disallowed branding and any other potential issues.
 Set hasDisallowedBranding to true if any disallowed branding is found, otherwise false.

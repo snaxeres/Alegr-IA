@@ -39,9 +39,9 @@ const prompt = ai.definePrompt({
 Analyze the following code snippet for any Firebase logos, icons, text references, or unwanted dependencies.
 
 Code Snippet:
-```
+\`\`\`
 {{{codeSnippet}}}
-```
+\`\`\`
 
 Provide a report detailing the findings and indicate whether Firebase branding is present.
 Set hasFirebaseBranding to true if any Firebase branding is found, otherwise false.`,
