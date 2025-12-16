@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import type { ComponentProps } from "react";
+import { WhatsAppIcon } from "./icons/whatsapp-icon";
 
 type WhatsAppButtonProps = Omit<ComponentProps<typeof Button>, "onClick"> & {
   service: string;
@@ -17,6 +18,7 @@ export function WhatsAppButton({ service, phoneNumber, ...props }: WhatsAppButto
 
   return (
     <Button onClick={openWhatsApp} {...props}>
+      <WhatsAppIcon className="h-5 w-5 mr-2" />
       WhatsApp
     </Button>
   );

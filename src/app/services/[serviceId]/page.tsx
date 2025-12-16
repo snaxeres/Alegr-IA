@@ -1,10 +1,11 @@
 import { services, projectPlaceholders } from '@/lib/services';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
+import { WhatsAppButton } from '@/components/whatsapp-button';
 
 export default function ServicePage({ params }: { params: { serviceId: string } }) {
   const service = services.find((s) => s.id === params.serviceId);
@@ -34,7 +35,7 @@ export default function ServicePage({ params }: { params: { serviceId: string } 
 
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projectPlaceholders.slice(0, 5).map((project) => (
-          <Card key={project.id} className="overflow-hidden">
+          <Card key={project.id} className="overflow-hidden flex flex-col">
             <CardHeader className="p-0">
               <div className="aspect-video relative">
                 <Image
@@ -46,10 +47,22 @@ export default function ServicePage({ params }: { params: { serviceId: string } 
                 />
               </div>
             </CardHeader>
-            <CardContent className="p-6">
+            <CardContent className="p-6 flex-grow">
               <CardTitle className="font-headline">{project.title}</CardTitle>
               <CardDescription className="mt-2">{project.description}</CardDescription>
+              <ul className="mt-4 space-y-2 text-sm text-muted-foreground list-disc list-inside">
+                {project.features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
             </CardContent>
+            <CardFooter>
+              <WhatsAppButton 
+                service={project.title} 
+                phoneNumber="11234567890" 
+                className="w-full"
+              />
+            </CardFooter>
           </Card>
         ))}
       </div>

@@ -43,8 +43,13 @@ export const services = [
 
 export const projectPlaceholders = Array.from({ length: 5 }, (_, i) => ({
   id: `project-${i + 1}`,
-  title: `Project ${i + 1}`,
-  description: `Brief description of project ${i + 1}.`,
+  title: `Template ${i + 1}`,
+  description: `Brief description for template ${i + 1}.`,
   imageUrl: `https://picsum.photos/seed/${100 + i}/600/400`,
-  imageHint: "project example"
+  imageHint: "project example",
+  features: [
+    `Feature A for template ${i + 1}`,
+    `Feature B for template ${i + 1}`,
+    `Feature C for template ${i + 1}`,
+  ]
 }));
