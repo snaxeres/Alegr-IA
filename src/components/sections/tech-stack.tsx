@@ -14,6 +14,9 @@ import { NestIcon } from "../icons/nest-icon";
 import { WordpressIcon } from "../icons/wordpress-icon";
 import { useLanguage } from "@/context/language-context";
 import { translations } from "@/lib/translations";
+import { MongodbIcon } from "../icons/mongodb-icon";
+import { MySqlIcon } from "../icons/mysql-icon";
+import { PhpIcon } from "../icons/php-icon";
 
 const technologies = [
   { name: "React", icon: ReactIcon },
@@ -27,6 +30,9 @@ const technologies = [
   { name: "Express.js", icon: ExpressIcon },
   { name: "Nest.js", icon: NestIcon },
   { name: "WordPress", icon: WordpressIcon },
+  { name: "MongoDB", icon: MongodbIcon },
+  { name: "MySQL", icon: MySqlIcon },
+  { name: "PHP", icon: PhpIcon },
 ];
 
 export default function TechStack() {
