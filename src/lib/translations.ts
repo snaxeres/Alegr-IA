@@ -5,7 +5,6 @@ export const translations = {
     navServices: 'Servicios',
     navStack: 'Tecnologías',
     navContact: 'Contacto',
-    navTranslator: 'Traductor',
     // Hero
     heroTitle: 'Construyendo Experiencias Digitales',
     heroSubtitle: 'Un Experto en React',
@@ -38,7 +37,6 @@ export const translations = {
     navServices: 'Services',
     navStack: 'Stack',
     navContact: 'Contact',
-    navTranslator: 'Translator',
     // Hero
     heroTitle: 'Building Digital Experiences',
     heroSubtitle: 'A React Expert',
@@ -71,7 +69,6 @@ export const translations = {
     navServices: 'Serviços',
     navStack: 'Tecnologias',
     navContact: 'Contato',
-    navTranslator: 'Tradutor',
     // Hero
     heroTitle: 'Construindo Experiências Digitais',
     heroSubtitle: 'Um Especialista em React',

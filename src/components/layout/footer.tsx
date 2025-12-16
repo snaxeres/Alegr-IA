@@ -20,12 +20,6 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex items-center gap-6">
-          <Link
-            href="/translator"
-            className="text-sm text-muted-foreground hover:text-primary transition-colors"
-          >
-            {t.navTranslator}
-          </Link>
           <div className="flex items-center gap-4">
             <Link
               href="#"

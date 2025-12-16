@@ -24,7 +24,6 @@ export default function Header() {
     { href: "/#services", label: t.navServices },
     { href: "/#stack", label: t.navStack },
     { href: "/#contact", label: t.navContact },
-    { href: "/translator", label: t.navTranslator },
   ];
 
   return (
