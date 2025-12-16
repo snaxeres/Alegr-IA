@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { ReactIcon } from "@/components/icons/react-icon";
 import { NodeIcon } from "@/components/icons/node-icon";
@@ -9,6 +11,8 @@ import { BootstrapIcon } from "../icons/bootstrap-icon";
 import { ExpressIcon } from "../icons/express-icon";
 import { NestIcon } from "../icons/nest-icon";
 import { WordpressIcon } from "../icons/wordpress-icon";
+import { useLanguage } from "@/context/language-context";
+import { translations } from "@/lib/translations";
 
 const technologies = [
   { name: "React", icon: ReactIcon },
@@ -25,15 +29,18 @@ const technologies = [
 ];
 
 export default function TechStack() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <section id="stack" className="w-full py-20 md:py-32 bg-card">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl font-headline font-bold tracking-tight sm:text-4xl">
-            My Technology Stack
+            {t.stackTitle}
           </h2>
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
-            I work with modern technologies to build high-quality, scalable, and maintainable applications.
+            {t.stackDescription}
           </p>
         </div>
 

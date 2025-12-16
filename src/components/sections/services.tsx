@@ -1,6 +1,10 @@
+"use client";
+
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { WhatsAppButton } from "@/components/whatsapp-button";
+import { useLanguage } from "@/context/language-context";
+import { translations } from "@/lib/translations";
 import placeholderData from "@/lib/placeholder-images.json";
 import Image from "next/image";
 
@@ -48,16 +52,18 @@ const services = [
 
 export default function Services() {
   const { placeholderImages } = placeholderData;
+  const { language } = useLanguage();
+  const t = translations[language];
 
   return (
     <section id="services" className="w-full py-20 md:py-32">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl font-headline font-bold tracking-tight sm:text-4xl">
-            Services & Packages
+            {t.servicesTitle}
           </h2>
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
-            Flexible packages designed to fit your needs, from simple websites to complex applications.
+            {t.servicesDescription}
           </p>
         </div>
 

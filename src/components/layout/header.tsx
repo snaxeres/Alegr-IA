@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Logo } from "@/components/icons/logo";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -11,17 +11,21 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { cn } from "@/lib/utils";
-
-const NAV_LINKS = [
-  { href: "/#services", label: "Services" },
-  { href: "/#stack", label: "Stack" },
-  { href: "/#contact", label: "Contact" },
-  { href: "/translator", label: "Translator" },
-];
+import { useLanguage } from "@/context/language-context";
+import { translations } from "@/lib/translations";
+import { LanguageSwitcher } from "@/components/language-switcher";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const { language } = useLanguage();
+  const t = translations[language];
+
+  const NAV_LINKS = [
+    { href: "/#services", label: t.navServices },
+    { href: "/#stack", label: t.navStack },
+    { href: "/#contact", label: t.navContact },
+    { href: "/translator", label: t.navTranslator },
+  ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -88,6 +92,7 @@ export default function Header() {
         </Link>
         
         <div className="flex flex-1 items-center justify-end space-x-2">
+          <LanguageSwitcher />
           <ThemeToggle />
         </div>
       </div>
