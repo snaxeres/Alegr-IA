@@ -2,53 +2,13 @@
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { WhatsAppButton } from "@/components/whatsapp-button";
 import { useLanguage } from "@/context/language-context";
 import { translations } from "@/lib/translations";
 import placeholderData from "@/lib/placeholder-images.json";
+import { services } from "@/lib/services";
 import Image from "next/image";
-
-const services = [
-  {
-    id: "landing-page",
-    title: "Landing Page",
-    description: "A professional and responsive landing page to launch your product or service.",
-    price: "US$ 80-100",
-    features: [
-      "Responsive Design",
-      "Contact Form",
-      "SEO Friendly",
-      "Fast Loading Speed"
-    ],
-    imageId: "service-basic"
-  },
-  {
-    id: "react-frontend",
-    title: "React Frontend",
-    description: "A modern and interactive frontend application built with React.",
-    price: "US$ 250-600",
-    features: [
-      "Component-based architecture",
-      "State Management",
-      "API Integration",
-      "Custom Animations"
-    ],
-    imageId: "service-ecommerce"
-  },
-  {
-    id: "full-stack",
-    title: "Full Stack Solution",
-    description: "A complete web application from database to UI, tailored to your business needs.",
-    price: "US$ 700-2500+",
-    features: [
-      "Frontend and Backend Development",
-      "Database Design & Management",
-      "User Authentication",
-      "Deployment & Maintenance"
-    ],
-    imageId: "service-custom"
-  }
-];
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Services() {
   const { placeholderImages } = placeholderData;
@@ -103,7 +63,11 @@ export default function Services() {
                       </CardContent>
                       <CardFooter className="flex justify-between items-center pt-4">
                         <p className="font-semibold text-lg">{service.price}</p>
-                        <WhatsAppButton service={service.title} phoneNumber="11234567890" />
+                        <Button asChild variant="outline">
+                          <Link href={`/services/${service.id}`}>
+                            Ver más
+                          </Link>
+                        </Button>
                       </CardFooter>
                     </Card>
                   </div>
