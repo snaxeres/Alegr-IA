@@ -1,19 +1,19 @@
-import { CodeQualityTool } from "@/components/ai/code-quality-tool";
+import { Translator } from "@/components/translator";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
-export default function AiToolPage() {
+export default function TranslatorPage() {
   return (
     <div className="container mx-auto py-10 md:py-20">
       <div className="max-w-4xl mx-auto">
         <Card>
           <CardHeader>
-            <CardTitle className="font-headline text-3xl">Code Quality Evaluation Tool</CardTitle>
+            <CardTitle className="font-headline text-3xl">Traductor IA</CardTitle>
             <CardDescription className="text-lg">
-              Use our AI model to analyze code snippets. It detects disallowed branding (e.g., Firebase) and ensures adherence to project guidelines.
+              Traduce texto entre español, inglés y portugués usando IA.
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <CodeQualityTool />
+            <Translator />
           </CardContent>
         </Card>
       </div>

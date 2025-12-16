@@ -17,7 +17,7 @@ const NAV_LINKS = [
   { href: "/#services", label: "Services" },
   { href: "/#stack", label: "Stack" },
   { href: "/#contact", label: "Contact" },
-  { href: "/ai-tool", label: "AI Tool" },
+  { href: "/translator", label: "Translator" },
 ];
 
 export default function Header() {

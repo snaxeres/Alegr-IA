@@ -14,10 +14,10 @@ export default function Footer() {
         </div>
         <div className="flex items-center gap-6">
           <Link
-            href="/ai-tool"
+            href="/translator"
             className="text-sm text-muted-foreground hover:text-primary transition-colors"
           >
-            AI Tool
+            Translator
           </Link>
           <div className="flex items-center gap-4">
             <Link
