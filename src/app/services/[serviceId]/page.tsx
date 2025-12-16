@@ -31,6 +31,7 @@ export default function ServicePage({ params }: { params: { serviceId: string } 
         <p className="mt-4 text-lg leading-8 text-muted-foreground">
           {service.description}
         </p>
+        <p className="mt-4 text-2xl font-bold text-primary">{service.price}</p>
       </div>
 
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
