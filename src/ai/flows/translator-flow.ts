@@ -10,7 +10,7 @@
 import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
 
-export const languageSchema = z.enum(['English', 'Spanish', 'Portuguese']);
+const languageSchema = z.enum(['English', 'Spanish', 'Portuguese']);
 
 const TranslateTextInputSchema = z.object({
   text: z.string().describe('The text to translate.'),

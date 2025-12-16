@@ -5,7 +5,6 @@ import {
   translateText,
   type TranslateTextInput,
   type TranslateTextOutput,
-  languageSchema,
 } from '@/ai/flows/translator-flow';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
@@ -20,6 +19,9 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Loader2, AlertCircle } from 'lucide-react';
+import { z } from 'zod';
+
+const languageSchema = z.enum(['English', 'Spanish', 'Portuguese']);
 
 export function Translator() {
   const [loading, setLoading] = useState(false);
