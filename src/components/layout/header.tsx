@@ -33,7 +33,7 @@ export default function Header() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Logo className="h-6 w-6" />
             <span className="hidden font-bold sm:inline-block font-headline">
-              PixelPro Folio
+              Alegr-IA
             </span>
           </Link>
           <nav className="flex items-center gap-6 text-sm">
@@ -66,7 +66,7 @@ export default function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <Logo className="mr-2 h-6 w-6" />
-              <span className="font-bold font-headline">PixelPro Folio</span>
+              <span className="font-bold font-headline">Alegr-IA</span>
             </Link>
             <div className="flex flex-col space-y-3">
               {NAV_LINKS.map((link) => (
@@ -86,7 +86,7 @@ export default function Header() {
         <Link href="/" className="flex items-center space-x-2 md:hidden">
           <Logo className="h-6 w-6" />
           <span className="font-bold sm:inline-block font-headline">
-            PixelPro Folio
+            Alegr-IA
           </span>
         </Link>
         

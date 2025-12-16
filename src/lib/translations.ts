@@ -30,7 +30,7 @@ export const translations = {
     contactMessagePlaceholder: 'Tu mensaje...',
     contactSendButton: 'Enviar Mensaje',
     // Footer
-    footerRights: '© {year} PixelPro Folio. Todos los derechos reservados.',
+    footerRights: '© {year} Alegr-IA. Todos los derechos reservados.',
   },
   en: {
     // Header
@@ -62,7 +62,7 @@ export const translations = {
     contactMessagePlaceholder: 'Your message...',
     contactSendButton: 'Send Message',
     // Footer
-    footerRights: '© {year} PixelPro Folio. All rights reserved.',
+    footerRights: '© {year} Alegr-IA. All rights reserved.',
   },
   pt: {
     // Header
@@ -94,6 +94,6 @@ export const translations = {
     contactMessagePlaceholder: 'Sua mensagem...',
     contactSendButton: 'Enviar Mensagem',
     // Footer
-    footerRights: '© {year} PixelPro Folio. Todos os direitos reservados.',
+    footerRights: '© {year} Alegr-IA. Todos os direitos reservados.',
   },
 };

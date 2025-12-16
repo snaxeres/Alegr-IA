@@ -9,7 +9,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from "@/context/language-context";
 
 export const metadata: Metadata = {
-  title: "PixelPro Folio",
+  title: "Alegr-IA",
   description: "Portfolio of a professional web developer.",
 };
 

@@ -4,7 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ReactIcon } from "@/components/icons/react-icon";
 import { NodeIcon } from "@/components/icons/node-icon";
 import { TailwindIcon } from "@/components/icons/tailwind-icon";
-import { Database, Zap } from "lucide-react";
+import { TypescriptIcon } from "../icons/typescript-icon";
+import { NextjsIcon } from "../icons/nextjs-icon";
 import { JavascriptIcon } from "../icons/javascript-icon";
 import { SassIcon } from "../icons/sass-icon";
 import { BootstrapIcon } from "../icons/bootstrap-icon";
@@ -16,7 +17,8 @@ import { translations } from "@/lib/translations";
 
 const technologies = [
   { name: "React", icon: ReactIcon },
-  { name: "Vite", icon: Zap },
+  { name: "Next.js", icon: NextjsIcon },
+  { name: "TypeScript", icon: TypescriptIcon },
   { name: "JavaScript", icon: JavascriptIcon },
   { name: "SASS", icon: SassIcon },
   { name: "Bootstrap", icon: BootstrapIcon },
@@ -24,7 +26,6 @@ const technologies = [
   { name: "Node.js", icon: NodeIcon },
   { name: "Express.js", icon: ExpressIcon },
   { name: "Nest.js", icon: NestIcon },
-  { name: "MySQL", icon: Database },
   { name: "WordPress", icon: WordpressIcon },
 ];
 
