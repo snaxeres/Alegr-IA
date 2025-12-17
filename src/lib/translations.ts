@@ -96,4 +96,76 @@ export const translations = {
     // Footer
     footerRights: '© {year} Alegr-IA. Todos os direitos reservados.',
   },
+  it: {
+    // Header
+    navServices: 'Servizi',
+    navStack: 'Tecnologie',
+    navContact: 'Contatti',
+    // Hero
+    heroTitle: 'Costruendo Esperienze Digitali',
+    heroSubtitle: 'Un Esperto di React',
+    heroDescription: 'Ciao, sono uno sviluppatore appassionato che crea applicazioni web moderne, reattive e facili da usare. Costruiamo insieme qualcosa di straordinario.',
+    heroButtonContact: 'Mettiti in Contatto',
+    heroButtonServices: 'I Miei Servizi',
+    // Services
+    servicesTitle: 'Servizi e Pacchetti',
+    servicesDescription: 'Pacchetti flessibili progettati per soddisfare le tue esigenze, da siti web semplici ad applicazioni complesse.',
+    // Tech Stack
+    stackTitle: 'Il Mio Stack Tecnologico',
+    stackDescription: 'Lavoro con tecnologie moderne per creare applicazioni di alta qualità, scalabili e manutenibili.',
+    // Contact
+    contactTitle: 'Mettiti in Contatto',
+    contactDescription: 'Hai un progetto in mente o vuoi solo salutarmi? Mi farebbe piacere sentirti.',
+    contactInfoTitle: 'Informazioni di Contatto',
+    // Footer
+    footerRights: '© {year} Alegr-IA. Tutti i diritti riservati.',
+  },
+  fr: {
+    // Header
+    navServices: 'Services',
+    navStack: 'Technologies',
+    navContact: 'Contact',
+    // Hero
+    heroTitle: 'Créer des Expériences Numériques',
+    heroSubtitle: 'Un Expert React',
+    heroDescription: 'Bonjour, je suis un développeur passionné qui crée des applications web modernes, réactives et conviviales. Construisons quelque chose d\'incroyable ensemble.',
+    heroButtonContact: 'Prendre Contact',
+    heroButtonServices: 'Mes Services',
+    // Services
+    servicesTitle: 'Services et Forfaits',
+    servicesDescription: 'Des forfaits flexibles conçus pour répondre à vos besoins, des sites web simples aux applications complexes.',
+    // Tech Stack
+    stackTitle: 'Ma Stack Technologique',
+    stackDescription: 'Je travaille avec des technologies modernes pour créer des applications de haute qualité, évolutives et maintenables.',
+    // Contact
+    contactTitle: 'Prendre Contact',
+    contactDescription: 'Vous avez un projet en tête ou vous voulez simplement dire bonjour? J\'adorerais avoir de vos nouvelles.',
+    contactInfoTitle: 'Coordonnées',
+    // Footer
+    footerRights: '© {year} Alegr-IA. Tous droits réservés.',
+  },
+  zh: {
+    // Header
+    navServices: '服务',
+    navStack: '技术栈',
+    navContact: '联系',
+    // Hero
+    heroTitle: '构建数字体验',
+    heroSubtitle: 'React专家',
+    heroDescription: '你好，我是一位充满热情的开发者，致力于创建现代、响应式和用户友好的Web应用程序。让我们一起创造一些了不起的东西。',
+    heroButtonContact: '取得联系',
+    heroButtonServices: '我的服务',
+    // Services
+    servicesTitle: '服务与套餐',
+    servicesDescription: '灵活的套餐旨在满足您的需求，从简单的网站到复杂的应用程序。',
+    // Tech Stack
+    stackTitle: '我的技术栈',
+    stackDescription: '我使用现代技术来构建高质量、可扩展和可维护的应用程序。',
+    // Contact
+    contactTitle: '取得联系',
+    contactDescription: '您有项目在心或只是想打个招呼？我很乐意听到您的声音。',
+    contactInfoTitle: '联系信息',
+    // Footer
+    footerRights: '© {year} Alegr-IA. 版权所有。',
+  },
 };

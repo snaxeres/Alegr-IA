@@ -11,6 +11,9 @@ export function LanguageSwitcher() {
     { code: 'es', label: 'ESP' },
     { code: 'pt', label: 'PT' },
     { code: 'en', label: 'ENG' },
+    { code: 'it', label: 'ITA' },
+    { code: 'fr', label: 'FRA' },
+    { code: 'zh', label: 'CHI' },
   ] as const;
 
   return (
