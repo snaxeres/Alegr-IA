@@ -15,6 +15,8 @@ export default function ServicePage({ params }: { params: { serviceId: string } 
     notFound();
   }
 
+  const projects = projectPlaceholders[params.serviceId] || [];
+
   return (
     <div className="container mx-auto py-20 md:py-32">
       <div className="mb-8">
@@ -35,7 +37,7 @@ export default function ServicePage({ params }: { params: { serviceId: string } 
       </div>
 
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projectPlaceholders.map((project) => (
+        {projects.map((project) => (
           <Card key={project.id} className="overflow-hidden flex flex-col">
             <CardHeader className="p-0">
               <div className="aspect-video relative">
