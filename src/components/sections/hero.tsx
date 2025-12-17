@@ -17,7 +17,7 @@ export default function Hero() {
             {t.heroTitle}
           </h1>
           <div className="mt-6 text-lg sm:text-xl md:text-2xl text-primary typewriter">
-            <h1 className="font-code">{t.heroSubtitle}</h1>
+            <h1 className="font-code inline-block">{t.heroSubtitle}</h1>
           </div>
           <p className="mt-6 max-w-2xl mx-auto text-lg leading-8 text-muted-foreground">
             {t.heroDescription}

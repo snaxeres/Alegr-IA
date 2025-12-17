@@ -33,7 +33,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <LanguageProvider>
-            <div className="relative flex min-h-dvh flex-col bg-background">
+            <div className="relative flex min-h-dvh flex-col bg-background overflow-x-hidden">
               <Header />
               <main className="flex-1">{children}</main>
               <Footer />
