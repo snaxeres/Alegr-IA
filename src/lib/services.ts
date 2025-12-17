@@ -57,16 +57,30 @@ export const projectPlaceholders = [
       'Formulario de contacto funcional',
     ]
   },
-  ...Array.from({ length: 4 }, (_, i) => ({
-    id: `project-${i + 2}`,
-    title: `Template ${i + 2}`,
-    description: `Brief description for template ${i + 2}.`,
-    imageUrl: `https://picsum.photos/seed/${101 + i}/600/400`,
+  {
+    id: 'project-2',
+    title: 'Landing Page Moderna para Gimnasio',
+    description: 'Sitio web responsive, moderno y optimizado para SEO, ideal para gimnasios y centros de fitness. Incluye Home, Servicios y Contacto, usando HTML5, SCSS, y Bootstrap 5.',
+    imageUrl: 'https://picsum.photos/seed/101/600/400',
+    imageHint: 'gym website',
+    features: [
+      'Diseño 100% responsive y mobile-first',
+      'Navegación sticky y header fijo',
+      'Secciones: Hero, Servicios, Galería y Contacto',
+      'Optimización SEO implementada',
+      'Formulario de contacto accesible y validado',
+    ]
+  },
+  ...Array.from({ length: 3 }, (_, i) => ({
+    id: `project-${i + 3}`,
+    title: `Template ${i + 3}`,
+    description: `Brief description for template ${i + 3}.`,
+    imageUrl: `https://picsum.photos/seed/${102 + i}/600/400`,
     imageHint: "project example",
     features: [
-      `Feature A for template ${i + 2}`,
-      `Feature B for template ${i + 2}`,
-      `Feature C for template ${i + 2}`,
+      `Feature A for template ${i + 3}`,
+      `Feature B for template ${i + 3}`,
+      `Feature C for template ${i + 3}`,
     ]
   }))
 ];
