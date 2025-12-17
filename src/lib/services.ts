@@ -89,14 +89,16 @@ export const projectPlaceholders: Record<string, any[]> = {
   "react-frontend": [
     {
       id: 'project-4',
-      title: 'Template 1',
-      description: 'Brief description for template 1.',
+      title: 'Ecommerce Gaming',
+      description: 'E-commerce temático gaming responsive, con catálogo de productos, filtros, búsqueda, carrito persistente y checkout simulado.',
       imageUrl: 'https://picsum.photos/seed/103/600/400',
-      imageHint: 'react project',
+      imageHint: 'ecommerce gaming',
+      liveUrl: 'https://ecommercejsprueba.netlify.app/index.html',
       features: [
-        'Feature A for template 1',
-        'Feature B for template 1',
-        'Feature C for template 1',
+        'Catálogo con filtros, búsqueda y paginación',
+        'Carrito de compras persistente (LocalStorage)',
+        'Checkout simulado con validación',
+        'Feedback visual con toasts y loaders',
       ]
     },
     {
