@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Eye } from 'lucide-react';
 import { WhatsAppButton } from '@/components/whatsapp-button';
 
 export default function ServicePage({ params }: { params: { serviceId: string } }) {
@@ -59,10 +59,21 @@ export default function ServicePage({ params }: { params: { serviceId: string } 
             </CardContent>
             <CardFooter className="flex justify-between items-center">
               <p className="font-semibold text-lg">{service.price}</p>
-              <WhatsAppButton 
-                service={`${project.title} (${service.title})`}
-                phoneNumber="5491568908235"
-              />
+              <div className="flex items-center gap-2">
+                {project.liveUrl && (
+                  <Button asChild variant="outline" size="sm">
+                    <Link href={project.liveUrl} target="_blank" rel="noreferrer">
+                      <Eye className="h-4 w-4 mr-2" />
+                      Vista
+                    </Link>
+                  </Button>
+                )}
+                <WhatsAppButton 
+                  size="sm"
+                  service={`${project.title} (${service.title})`}
+                  phoneNumber="5491568908235"
+                />
+              </div>
             </CardFooter>
           </Card>
         ))}

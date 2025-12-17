@@ -41,15 +41,32 @@ export const services = [
   }
 ];
 
-export const projectPlaceholders = Array.from({ length: 5 }, (_, i) => ({
-  id: `project-${i + 1}`,
-  title: `Template ${i + 1}`,
-  description: `Brief description for template ${i + 1}.`,
-  imageUrl: `https://picsum.photos/seed/${100 + i}/600/400`,
-  imageHint: "project example",
-  features: [
-    `Feature A for template ${i + 1}`,
-    `Feature B for template ${i + 1}`,
-    `Feature C for template ${i + 1}`,
-  ]
-}));
+export const projectPlaceholders = [
+  {
+    id: 'project-1',
+    title: 'Farmacia Salud Total - Landing Page',
+    description: 'Landing page moderna y responsive para una farmacia, desarrollada con HTML5, SCSS, Bootstrap 5 y JavaScript. Incluye páginas de inicio, servicios y contacto, con animaciones y optimización SEO.',
+    imageUrl: `https://picsum.photos/seed/100/600/400`,
+    imageHint: "pharmacy website",
+    liveUrl: "https://snaxeres.github.io/landingPharmhtml/index.html",
+    features: [
+      'Diseño 100% responsive (Mobile-First)',
+      '3 Páginas (Inicio, Servicios, Contacto)',
+      'Animaciones y transiciones suaves',
+      'Optimización SEO básica',
+      'Formulario de contacto funcional',
+    ]
+  },
+  ...Array.from({ length: 4 }, (_, i) => ({
+    id: `project-${i + 2}`,
+    title: `Template ${i + 2}`,
+    description: `Brief description for template ${i + 2}.`,
+    imageUrl: `https://picsum.photos/seed/${101 + i}/600/400`,
+    imageHint: "project example",
+    features: [
+      `Feature A for template ${i + 2}`,
+      `Feature B for template ${i + 2}`,
+      `Feature C for template ${i + 2}`,
+    ]
+  }))
+];
