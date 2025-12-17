@@ -1,3 +1,4 @@
+
 import { services, projectPlaceholders } from '@/lib/services';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
 import Image from 'next/image';
@@ -60,7 +61,7 @@ export default function ServicePage({ params }: { params: { serviceId: string } 
               <p className="font-semibold text-lg">{service.price}</p>
               <WhatsAppButton 
                 service={project.title} 
-                phoneNumber="11234567890"
+                phoneNumber="5491568908235"
               />
             </CardFooter>
           </Card>

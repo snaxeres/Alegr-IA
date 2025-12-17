@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Instagram } from "lucide-react";
@@ -25,7 +26,7 @@ export default function Contact() {
 
         <div className="mt-16 flex justify-center gap-4">
           <Button asChild size="lg">
-            <Link href="#" target="_blank" rel="noreferrer">
+            <Link href="https://wa.me/5491568908235?text=Hola!%20Estoy%20interesado%20en%20tus%20servicios." target="_blank" rel="noreferrer">
               <WhatsAppIcon className="h-6 w-6 mr-2" />
               WhatsApp
             </Link>
