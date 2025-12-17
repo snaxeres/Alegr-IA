@@ -63,6 +63,7 @@ export const projectPlaceholders = [
     description: 'Sitio web responsive, moderno y optimizado para SEO, ideal para gimnasios y centros de fitness. Incluye Home, Servicios y Contacto, usando HTML5, SCSS, y Bootstrap 5.',
     imageUrl: 'https://picsum.photos/seed/101/600/400',
     imageHint: 'gym website',
+    liveUrl: "https://snaxeres.github.io/landingGymHtml/index.html",
     features: [
       'Diseño 100% responsive y mobile-first',
       'Navegación sticky y header fijo',
