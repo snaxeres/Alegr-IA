@@ -35,7 +35,7 @@ export default function ServicePage({ params }: { params: { serviceId: string } 
       </div>
 
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projectPlaceholders.slice(0, 5).map((project) => (
+        {projectPlaceholders.map((project) => (
           <Card key={project.id} className="overflow-hidden flex flex-col">
             <CardHeader className="p-0">
               <div className="aspect-video relative">

@@ -72,16 +72,16 @@ export const projectPlaceholders = [
       'Formulario de contacto accesible y validado',
     ]
   },
-  ...Array.from({ length: 3 }, (_, i) => ({
-    id: `project-${i + 3}`,
-    title: `Template ${i + 3}`,
-    description: `Brief description for template ${i + 3}.`,
-    imageUrl: `https://picsum.photos/seed/${102 + i}/600/400`,
+  {
+    id: `project-3`,
+    title: `Template 3`,
+    description: `Brief description for template 3.`,
+    imageUrl: `https://picsum.photos/seed/102/600/400`,
     imageHint: "project example",
     features: [
-      `Feature A for template ${i + 3}`,
-      `Feature B for template ${i + 3}`,
-      `Feature C for template ${i + 3}`,
+      `Feature A for template 3`,
+      `Feature B for template 3`,
+      `Feature C for template 3`,
     ]
-  }))
+  }
 ];
