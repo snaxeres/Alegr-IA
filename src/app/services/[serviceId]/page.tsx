@@ -60,7 +60,7 @@ export default function ServicePage({ params }: { params: { serviceId: string } 
             <CardFooter className="flex justify-between items-center">
               <p className="font-semibold text-lg">{service.price}</p>
               <WhatsAppButton 
-                service={project.title} 
+                service={`${project.title} (${service.title})`}
                 phoneNumber="5491568908235"
               />
             </CardFooter>
