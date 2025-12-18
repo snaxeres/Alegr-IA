@@ -75,14 +75,16 @@ export const projectPlaceholders: Record<string, any[]> = {
     },
     {
       id: `project-3`,
-      title: `Template 3`,
-      description: `Brief description for template 3.`,
+      title: `Peluquería & Barbería — Landing Page`,
+      description: `Landing page moderna para un salón de peluquería y barbería. Incluye páginas principales, estilos SCSS organizados, animaciones y enlaces directos para reserva por WhatsApp.`,
       imageUrl: `https://picsum.photos/seed/102/600/400`,
-      imageHint: "project example",
+      imageHint: "barber shop",
+      liveUrl: "https://pelu-landing.vercel.app/",
       features: [
-        `Feature A for template 3`,
-        `Feature B for template 3`,
-        `Feature C for template 3`,
+        `Diseño responsive (Bootstrap 5)`,
+        `Animaciones CSS (fade, slide, scale)`,
+        `FAQ interactivo`,
+        `Reserva por WhatsApp`
       ]
     }
   ],
