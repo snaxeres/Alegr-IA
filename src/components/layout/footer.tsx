@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Logo } from "@/components/icons/logo";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Briefcase, Github, Linkedin } from "lucide-react";
 import { useLanguage } from "@/context/language-context";
 import { translations } from "@/lib/translations";
 
@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-4">
             <Link
-              href="#"
+              href="https://github.com/snaxeres"
               target="_blank"
               rel="noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -31,7 +31,7 @@ export default function Footer() {
               <span className="sr-only">GitHub</span>
             </Link>
             <Link
-              href="#"
+              href="https://www.linkedin.com/in/enrii-alegre-ab9b45152/"
               target="_blank"
               rel="noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -40,13 +40,13 @@ export default function Footer() {
               <span className="sr-only">LinkedIn</span>
             </Link>
             <Link
-              href="#"
+              href="https://portfolioenriialegre.netlify.app/"
               target="_blank"
               rel="noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
-              <Twitter className="h-5 w-5" />
-              <span className="sr-only">Twitter</span>
+              <Briefcase className="h-5 w-5" />
+              <span className="sr-only">Portfolio</span>
             </Link>
           </div>
         </div>
