@@ -105,14 +105,16 @@ export const projectPlaceholders: Record<string, any[]> = {
     },
     {
       id: 'project-5',
-      title: 'Template 2',
-      description: 'Brief description for template 2.',
+      title: 'TechStore - Ecommerce con React',
+      description: 'Ecommerce funcional con React, incluyendo catálogo de productos, detalle, formularios de registro y login. Desarrollado con React Router.',
       imageUrl: 'https://picsum.photos/seed/104/600/400',
-      imageHint: 'dashboard project',
+      imageHint: 'react ecommerce',
+      liveUrl: 'https://magical-monstera-79021d.netlify.app/',
       features: [
-        'Feature A for template 2',
-        'Feature B for template 2',
-        'Feature C for template 2',
+        'Listado y detalle de productos',
+        'Formularios de Registro y Login',
+        'Routing con React Router v6',
+        'Diseño 100% responsivo',
       ]
     },
     {
